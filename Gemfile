@@ -48,3 +48,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+gem 'haml', '~> 5.0', '>= 5.0.1'
+gem 'simple_form', '~> 3.5'
+gem 'devise', '~> 4.3'
+
