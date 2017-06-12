@@ -3,10 +3,16 @@
     - unless @docs.blank?
       - @docs.each do |doc|
         %a{ href: (url_for [doc])}
-          .doc
-            %p.title= doc.title
-            %p.date= time_ago_in_words(doc.created_at)
-            %p.content= truncate(doc.content, length: 50)
+          - if doc.approved == true
+            .doc{style: "background-color: green"}
+              %p.title= doc.title
+              %p.date= time_ago_in_words(doc.created_at)
+              %p.content= truncate(doc.content, length: 50)
+          - else 
+            .doc{style: "background-color: red"}
+              %p.title= doc.title
+              %p.date= time_ago_in_words(doc.created_at)
+              %p.content= truncate(doc.content, length: 50)    
     - else
       %h2 Create a proposal
       %button= link_to "Create Doc", new_doc_path
