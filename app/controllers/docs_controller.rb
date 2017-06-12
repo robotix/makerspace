@@ -10,10 +10,21 @@ class DocsController < ApplicationController
   end
 
   def new
-    @doc = current_user.docs.build
+    render "/docs/newdoc.html.haml"
+    
   end
 
+  def write
+    @doc = current_user.docs.build
+    render 'new'
+  end
+
+  def ggldoc
+    @doc = current_user.docs.build
+    render "/docs/googledocslink.html.haml"
+  end
   def create
+    
     @doc = current_user.docs.build(doc_params)
 
     if @doc.save
@@ -45,6 +56,6 @@ class DocsController < ApplicationController
     end
 
     def doc_params
-      params.require(:doc).permit(:title, :content)
+      params.require(:doc).permit(:title, :content,:gdoc)
     end
 end
