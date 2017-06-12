@@ -1,7 +1,11 @@
 .wrapper_with_padding
   #doc_show
     %h1.title= @doc.title
-    %p= @doc.content
+    -if @doc.gdoc
+      =link_to "#{@doc.gdoc}", @doc.gdoc, target: '_blank'
+      %p= @doc.content
+    -else  
+      %p= @doc.content
 
     .buttons
       = link_to "All Docs", docs_path
