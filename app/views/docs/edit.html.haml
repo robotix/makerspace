@@ -1,6 +1,10 @@
 .wrapper_with_padding
   %h1 Fix Doc
-
-  = render 'form'
-
-  = link_to 'Cancel', doc_path
+  -if @doc.content
+    = render 'form'
+  -else 
+    = simple_form_for @doc do |f|
+      = f.input :title
+      = f.input :gdoc
+      = f.button :submit, class: "button"
+      = link_to 'Cancel', doc_path
