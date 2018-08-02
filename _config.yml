@@ -1,17 +1,17 @@
 # Site settings
-title: A blog about lorem ipsum dolor sit amet
-description: A blog about lorem ipsum dolor sit amet
-# baseurl: "https://2018.robotix.in/makerspace" # the subpath of your site, e.g. /blog
+title: Makerspace
+description: An initiative of Technology Robotix Society.
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Makerspace
-user_description: Technology Robotix Society
-user_title: Software Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
+user_description: Technology Robotix Society is the focal point of all robotics activities at Indian Institute of Technology, Kharagpur.
+user_title: Technology Robotix Society
+email: https://contact.robotix.in/
+twitter_username: RobotixIITKgp
+github_username:  robotix
+# gplus_username:  
 
 # Google-analytics
 google-analytics:
