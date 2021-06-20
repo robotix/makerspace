@@ -1,7 +1,7 @@
 # Site settings
 title: Makerspace
 description: An initiative of Technology Robotix Society.
-baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
