@@ -1,3 +1,5 @@
+## Note: For making changes to the Makerspace website, make changes to the gh-pages branch of the repository.
+
 # Particle Jekyll Theme
 
 ![](./particle.jpg)
