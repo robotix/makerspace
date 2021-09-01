@@ -38,6 +38,150 @@
 </div>
 
 <div class="user-details">
+  <h2>IOT Based Patient Surveillance System</h2>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="/assets/img/idea_18.jpeg" />
+  </div>
+  <div class="contents">
+
+    <p> This project aims to make monitoring of patients in a hospital less dependent 
+      on human intervention by adding sensors which can check the patient’s vitals and 
+      store them in a database. The surveillance system will be quite practical in the medical field. 
+      Automatic storage of patient’s vitals will reduce the paperwork and manual burden. The doctors 
+      can check in on the patients any time without visiting them, and this might be crucial for patients 
+      in critical condition. To set up this project we connected ECG Sensor, SpO2 sensor and temperature sensor 
+      to an Arduino and sent the data retrieved by the sensors to an online database. 
+    </p>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="/assets/img/idea_19.jpg" />
+  </div>
+  <div class="contents-right">
+    <br>
+    <p> The webpage connected to the database displayed the real time data, and an alarm system 
+      using a buzzer connected to the Arduino setup. The buzzer rang when the measured data went 
+      beyond normal range. Further developments in this project include increasing the number of sensors 
+      and developing an app to display the real time data and send notifications.
+    </p>
+  </div>
+</div>
+
+<div class="user-details">
+  <h2>Omnidirectional Bot</h2>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="/assets/img/idea_16.jpeg" />
+  </div>
+  <div class="contents">
+
+    <p> The aim of this project is to assemble and program a motion controlled omni-directional bot. 
+      Omni-directional robots are capable of driving in any direction in a 2D plane without the need for 
+      a steering mechanism. It’s application lies in tight workspaces like factories and hospitals. 
+      Our model is a made using omni-wheels capable of moving in eight directions, rotation about its axis 
+      and following a target using Computer Vision while maintaining camera orientation at all times. 
+      The omni-wheels are controlled by the motors drivers connected to the WiFi module, Raspberry Pi, which 
+      is capable of independently processing all the input data independently.
+    </p>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="/assets/img/idea_17.jpeg" />
+  </div>
+  <div class="contents-right">
+    <br>
+    <p>  Scope of improvement in our project occurs in the following sections:<br>
+        1. Implementation of closed loop PID control to increase accuracy of bot movement<br>
+        2. Improving upon movement detection techniques with higher FPS.<br><br>
+      Learn more about the project <a href ="https://drive.google.com/drive/folders/1-0I67bqPlFEsKrrb9YbccleHyZcI74eM"> here</a>.
+    </p>
+  </div>
+</div>
+
+<div class="user-details">
+  <h2>CV Based Ball-Balancing</h2>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="/assets/img/idea_14.jpg" />
+  </div>
+  <div class="contents">
+
+    <p> This project was focused on understanding the control systems applications. It basically 
+      uses Computer Vision for locating the ball on the platform and then using the feedback mechanism, 
+      i.e, PID Controller in our case, automatically generates the tilt of the surface for 
+      balancing the ball on the platform. The servo motors are initially at an angle of 90 degrees and they 
+      turn by the angles that is given as an output of the PID Controller. All this is integrated on the 
+      Arduino UNO Microcontroller. All the communication between Arduino and the Python Code for OpenCV and controller 
+      is handled by Pyserial library.
+    </p>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="/assets/img/idea_15.jpg" />
+  </div>
+  <div class="contents-right">
+    <br>
+    <p>  In many ways, the project exceeded our expectations by 
+      being able to tilt the platform fast enough to balance the ball on it. Later on, we found out 
+      that the 4 servo motors were a very high load for Arduino.If this project were to be redone, there 
+      would be a few things not done the same way as with most first-time projects; but overall, 
+      the project was considered to be a success.<br><br>
+      Interested people can have a look at the complete documentation of the project 
+      <a href ="https://drive.google.com/file/d/1hPG_EIUyXh63I8hhvSnfY28OY_8VpfeS/view?usp=sharing"> here</a>.
+    </p>
+  </div>
+</div>
+
+<div class="user-details">
+  <h2>Motion Capture and Transfer using CV</h2>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="/assets/img/idea_20.png" />
+  </div>
+  <div class="contents">
+
+    <p> In this project, we have taken the concept of hand and pose detection and used it to control certain actions. 
+      To perform these actions games were used as a suitable medium. Some of the games were made by the team members 
+      whereas some members used pre-existing games and controlled them. For hand detection the games used were 
+      Snakes (made in Pygame), Bubble shooter (pre-existing) and Smashkarts(pre-existing). The team created various 
+      different actions using hand detection on the user camera feed and then used 3D geometry to determine poses and 
+      then relay action to the game.
+    </p>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="/assets/img/idea_21.png" />
+  </div>
+  <div class="contents-right">
+    <br>
+    <p> On the other hand some team members used pose(body) detection for the game control. The games chosen were 
+      Red Ball 4(pre-existing) and Subway surfers(pre-existing). In a similar fashion like hand detection the pose 
+      detection project detects the pose of the user using video input and then using 3D geometry analysis detects 
+      the pose the user is in and then gives input to the game to perform action.<br><br> 
+      To get more in-depth information of the project read the 
+      <a href="https://drive.google.com/drive/folders/1fieiSf7f5CmRsdlh6AayD-HJYYKLWMTE?usp=sharing"> documentation</a>.
+    </p>
+  </div>
+</div>
+
+<div class="user-details">
   <h2>Quadruped Bot</h2>
 </div>
 
