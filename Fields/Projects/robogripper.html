@@ -1,0 +1,227 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <style>
+      .leftright{
+        background-color: #d3116c;
+      }
+      .rightleft{
+        background-color: #d3116c;
+      }
+    </style>
+    <title>Gesture-Controlled Robotic Gripper</title>
+      <link rel="shortcut icon" type="image/jpg" href="../../img/gearHiRes.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75578d0f7f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div style="position: fixed; z-index: 100;">
+    <nav class="navbar">
+    <a onclick="javascript:window.close()">
+    <div class="close-container">
+    <div class="leftright"></div>
+    <div class="rightleft"></div>
+    </div>
+    </a>
+  </nav>
+  </div>
+    <div class="hero-container">
+      <div class="hero" style="background:url('../../img/robogrip_img.jpg') no-repeat; background-size:cover;"></div>
+      <div class="hero-stuff">
+          <h1>Gesture-Controlled Robotic Gripper</h1>
+      </div>
+      <div class="arrow-pos"><a href="#info">
+          <div class="arrow-container">
+            <div class="arrow-down"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="info" class="info-div"><h2>About The Project</h2></div>
+
+    <article>
+
+    <div class="image"><img src="../../img/idea_12.jpg">
+    </div>
+    <div class="text">In this project, we designed and constructed a robotic gripper with three degrees of freedom, controlled using hand gestures. This robotic gripper finds many applications in industrial and automation processes. The robot takes input through visual feed and processes it using Computer Vision. This processed data is sent to an Arduino Uno microcontroller via serial communication, which in turn controls the servo motors. The entire assembly was modelled, and 3D printed.
+    </div>
+    <div class="image"><img src="../../img/idea_13.jpg">
+    </div>
+    <div class="text">A sophisticated gear mechanism was used to control the claws of the gripper.
+      There is always a scope for improvement of this project. The following are a few
+      improvements that can further increase the capabilities of this robot:<br>
+      1. Including a feedback loop using sensors or cameras near the gripper to increase
+      efficiency.<br>
+      2. Using object detection to make the robot completely autonomous.<br><br>
+      Those who are interested can have a look at the complete documentation of the project
+      <a href="https://drive.google.com/file/d/1NNHX8WIotfJrBItvUOvBSZNGlDvJU9Ko/view?usp=sharing"> here</a>.
+    </div>
+
+    </article>
+    <br><br>
+    <div>
+  <div class="info-div"><h2>Meet The Team</h2></div>
+    <div class="info-div"><p>Mentors<p></div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-4 col-sm-4">
+                 <div class="our-team">
+                     <div class="pic">
+                          <img src="../../img/akshay.jpg" alt="team-member" class="img-fluid">
+                     </div>
+                     <div class="content">
+                          <h3 class="title">Akshay Manoj</h3>
+                         <span class="post">Mechatronics</span>
+                         <ul class="social">
+                           <li><a href="#" class="fab fa-github"></a></li>
+                           <li><a href="https://www.facebook.com/akshay.manoj.37" class="fab fa-facebook-f"></a></li>
+                           <li><a href="https://www.linkedin.com/in/akshay-manoj-bhaskaran-404315192/" class="fab fa-linkedin-in"></a></li>
+                           <li><a href="mailto:akshaymb68@gmail.com" class="fas fa-envelope"></a></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-lg-3 col-md-4 col-sm-4">
+                 <div class="our-team">
+                     <div class="pic">
+                          <img src="../../img/vatsalya.jpg" alt="team-member" class="img-fluid">
+                     </div>
+                     <div class="content">
+                          <h3 class="title">Vatsalya Rajaram</h3>
+                         <span class="post">Computer Vision and Embedded</span>
+                         <ul class="social">
+                           <li><a href="#" class="fab fa-github"></a></li>
+                           <li><a href="https://www.facebook.com/vatsalya.rajaram" class="fab fa-facebook-f"></a></li>
+                           <li><a href="https://www.linkedin.com/in/vatsalya-rajaram/" class="fab fa-linkedin-in"></a></li>
+                           <li><a href="mailto:vatsalya_rajaram@yahoo.com" class="fas fa-envelope"></a></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+
+        </div>
+    </div>
+    <div class="info-div"><p>Mentees<p></div>
+      <div class="team">
+      <div class="blog-card">
+      <div class="meta">
+      <div class="photo" style="background-image: url(../../img/Ajay.jpg)"></div>
+      <ul class="details">
+      <li class="author"><a href="#">Ajay</a></li>
+      <li class="tags">
+        <ul>
+          <li><a href="#"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.facebook.com/ajay.yogendra.3"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="http://www.linkedin.com/in/ajay-yogendra-58a09b20a"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="mailto:ajay617181@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </li>
+      </ul>
+      </div>
+      <div class="description">
+      <h1>Ajay Yogendra</h1>
+      <h2>Computer vision and Electronics</h2>
+      <p>He designed the code for capturing and processing gestures and also established serial communication between Arduino Uno and control computer.</p>
+      </div>
+      </div>
+      <div class="blog-card alt">
+      <div class="meta">
+      <div class="photo" style="background-image: url(../../img/Alapan.jpg)"></div>
+      <ul class="details">
+      <li class="author"><a href="#">Alapan</a></li>
+      <li class="tags">
+        <ul>
+          <li><a href="https://github.com/Alapan10008"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.facebook.com/alapan.sen.12/"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/alapan-sen-b88217200/"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="mailto:alapansen03@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </li>
+      </ul>
+      </div>
+      <div class="description">
+      <h1>Alapan Sen</h1>
+      <h2>Mechanical and controls, Electronics Team</h2>
+      <p>He designed the freecad model and the circuit diagram as well as simulated it on the Proteus software.</p>
+      </div>
+      </div>
+        <div class="blog-card">
+        <div class="meta">
+        <div class="photo" style="background-image: url(../../img/Ayashkanta.jpg)"></div>
+        <ul class="details">
+        <li class="author"><a href="#">Ayashkanta</a></li>
+        <li class="tags">
+          <ul>
+            <li><a href="https://github.com/Ayashkanta"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.facebook.com/ayashkanta.mishra.7/"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/alapan-sen-b88217200/"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="mailto:m.ayashkanta@gmail.com"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+        </li>
+        </ul>
+        </div>
+        <div class="description">
+        <h1>Ayashkanta Mishra</h1>
+        <h2>Mechanical and controls </h2>
+        <p>He was involved in designing the freecad model and also built the complete physical(working) model at his home.</p>
+        </div>
+        </div>
+        <div class="blog-card alt">
+          <div class="meta">
+          <div class="photo" style="background-image: url(../../img/Diya.jpg)"></div>
+          <ul class="details">
+          <li class="author"><a href="#">Diya</a></li>
+          <li class="tags">
+            <ul>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.facebook.com/diya.chodnekar"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/diya-chodnekar-47a6241ba/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="mailto:diya.chodnekar@gmail.com"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+          </li>
+          </ul>
+          </div>
+          <div class="description">
+          <h1>Diya Chodnekar</h1>
+          <h2>Computer Vision</h2>
+          <p>She assisted in designing the code for capturing and processing the hand gesturesbeing received through camera.</p>
+          </div>
+          </div>
+          <div class="blog-card">
+          <div class="meta">
+          <div class="photo" style="background-image: url(../../img/Harmeet.jpg)"></div>
+          <ul class="details">
+          <li class="author"><a href="https://khalsa-comrade.github.io/Its_Turbanator/">Harmeet</a></li>
+          <li class="tags">
+            <ul>
+              <li><a href="https://github.com/Khalsa-Comrade"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.facebook.com/harmeet.singhrath/"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/harmeet-singh-r-88378b1a9/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="mailto:Harmeet.s.rathore@gmail.com"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+          </li>
+          </ul>
+          </div>
+          <div class="description">
+          <h1>Harmeet Singh</h1>
+          <h2>Mechanical and controls, Electronics Team</h2>
+          <p>He assisted in designing the circuit diagram and simulation on the Proteus Software.</p>
+          </div>
+          </div>
+        </div>
+    </div>
+
+  </body>
+</html>

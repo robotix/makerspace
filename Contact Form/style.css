@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: rgb(47, 161, 226);
+    font-family: 'Poppins', sans-serif
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 10px auto
+}
+
+#upper-section,
+#lower-section {
+    padding: 30px;
+    border-radius: 10px;
+    min-height: 120px;
+    max-height: fit-content;
+    background-color: #F8F0E3;
+}
+
+h5,
+h6 {
+    font-weight: 600;
+    margin: 0
+}
+
+h1{
+  font-weight: bolder;
+  margin: 0;
+  color: #212529;
+}
+
+select {
+    padding: 0 10px 5px;
+    border: none;
+    width: 98%;
+    font-size: 14px;
+    cursor: pointer
+}
+
+select:focus {
+    outline: none
+}
+
+#dropdown p,
+#account p {
+    margin: 0;
+    font-size: 12px;
+    padding: 0 12px;
+    height: 15px;
+    color: #888
+}
+
+#middle-section {
+    padding: 30px;
+    border-radius: 10px;
+    min-height: 120px;
+    max-height: fit-content
+}
+
+a {
+    color: #888;
+    font-size: 14px
+}
+
+a:hover {
+    text-decoration: none
+}
+
+#middle-section p {
+    width: 90%;
+    font-size: 14px
+}
+
+.income {
+    width: 50%
+}
+.form-control{
+  border: 1px #F8F0E3;
+  border-bottom: 1px solid #212529;
+
+}
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-bottom: 1px solid #21bf73
+}
+
+.bg-light{
+  background-color: #F8F0E3 !important;
+}
+
+.options {
+    position: relative;
+    padding: 8px 10px 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.option {
+    position: relative;
+    padding-left: 40px
+}
+
+.options label {
+    display: block;
+    cursor: pointer
+}
+
+.option input {
+    opacity: 0
+}
+
+.checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #F8F0E3;
+    border: 1px solid #212529;
+    border-radius: 50%
+}
+
+.option input:checked~.checkmark:after {
+    display: block
+}
+
+.option .checkmark:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: #F8F0E3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s
+}
+
+.option input[type="radio"]:checked~.checkmark {
+    background: #212529;
+    transition: 300ms ease-in-out 0s
+}
+
+.option input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.option input[type="radio"]:checked+.options {
+    background-color: red
+}
+
+.option input[type="checkbox"]:checked~.checkmark {
+    background: #212529;
+    transition: 300ms ease-in-out 0s
+}
+
+.option input[type="checkbox"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.option input[type="checkbox"]:checked+.options {
+    background-color: red
+}
+
+.buttons{
+
+}
+
+.btnSubmit {
+  width: 40% !important;
+  border-radius: 1rem;
+  padding: 1.5%;
+  margin-bottom: 1rem;
+  color: #F8F0E3;
+  background-color: #212529;
+  border: none;
+  cursor: pointer;
+  margin-right: 6%;
+  color: rgb(246, 246, 252);
+  margin-top: 4%;
+  transition: 0.5s ease-in;
+}
+
+.btnSubmit:hover{
+  background-color:#21bf73;
+}
+
+.btnReset {
+  width: 40% !important;
+  border-radius: 1rem;
+  padding: 1.5%;
+    margin-bottom: 1rem;
+  color: #F8F0E3;
+  background-color: #212529;
+  border: none;
+  cursor: pointer;
+  margin-right: 6%;
+  color: rgb(246, 246, 252);
+  margin-top: 4%;
+}
+.btnReset:hover{
+  background-color: rgba(0,0,0,0.5);
+}
+.btn-block{
+  margin-left: 30% !important;
+}
+
+#account input {
+    border: none;
+    outline: none;
+    padding-top: 2px;
+    padding-left: 25px
+}
+
+#account p {
+    padding-top: 4px;
+    padding-left: 25px
+}
+
+
+@media(min-width:768px) and (max-width:991px) {
+    .option {
+        padding-left: 30px
+    }
+}
+
+@media(min-width:300px)and (max-width:575px) {
+    .income {
+        width: 75%
+    }
+
+    #or {
+        display: block;
+        padding-top: 5px;
+        text-align: center
+    }
+
+
+    .day .option .checkmark {
+        width: 20px;
+        height: 20px;
+        top: 2px
+    }
+
+    .day .option .checkmark::after {
+        width: 8px;
+        height: 8px;
+        left: 53%;
+        top: 53%
+    }
+}

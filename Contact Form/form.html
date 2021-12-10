@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+    <link rel="shortcut icon" type="image/jpg" href="../img/gearHiRes.png"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="title-section">
+      <h1>
+        <center>Have an Idea?</center>
+      </h1>
+    </div>
+    <form  method="post" autocomplete="off" name="google-sheet">
+    <div class="mt-3" id="upper-section">
+      <div class="d-sm-flex flex-sm-row align-items-center">
+        <h5>Personal Information</h5>
+      </div>
+      <h6 class="pt-4">Email ID </h6>
+      <div class="rounded"> <input type="email" name="Email" class="form-control bg-light income" placeholder="Enter your Email ID" required> </div>
+      <h6 class="pt-4">Full Name </h6>
+      <div class="rounded"> <input type="text" name="Full Name" class="form-control bg-light income" placeholder="Enter your Full Name" required> </div>
+      <h6 class="pt-4">Roll No. </h6>
+      <div class="rounded"> <input type="text" name="Roll No." class="form-control bg-light income" placeholder="Enter your Roll Number" required> </div>
+      <h6 class="pt-4">Contact No. </h6>
+      <div class="rounded"> <input type="tel" name="Phone Number" class="form-control bg-light income" placeholder="Enter your Contact Number" required> </div>
+      <h6 class="pt-4">Technical Skills</h6>
+      <div class="row pt-1">
+        <div class="col-md-4 mt-md-0 mt-3">
+          <div class="options"> <label class="option"><input class="options" type="checkbox" name="Arduino" value="Yes">Arduino<br><span class="checkmark"></span></label></div>
+        </div>
+        <div class="col-md-4 mt-md-0 mt-3">
+          <div class="options"> <label class="option"><input type="checkbox" name="Raspberry Pi" value="Yes">Raspberry Pi<br><span class="checkmark"></span></label></div>
+        </div>
+        <div class="col-md-4 mt-md-0 mt-3">
+          <div class="options"> <label class="option"><input type="checkbox" name="C" value="Yes">C<br><span class="checkmark"></span></label></div>
+        </div>
+      </div>
+      <div class="row pt-1">
+        <div class="col-md-4 mt-md-0 mt-3">
+          <div class="options"> <label class="option"><input type="checkbox" name="Python" value="Yes">Python<br><span class="checkmark"></span></label></div>
+        </div>
+        <div class="col-md-4 mt-md-0 mt-3">
+          <div class="options"> <label class="option"><input type="checkbox" name="Image Processing" value="Yes">Image Processing<br><span class="checkmark"></span></label></div>
+        </div>
+        <div class="col-md-4 mt-md-0 mt-3">
+          <div class="options"> <label class="option"><input type="checkbox" name="IoT" value="Yes">IoT<br><span class="checkmark"></span></label></div>
+        </div>
+      </div>
+      <div class="row pt-1">
+        <div class="col-md-4 mt-md-0 mt-3">
+          <div class="options"> <label class="option"><input type="checkbox" name="Electronics" value="Yes">Electronics<br><span class="checkmark"></span></label></div>
+        </div>
+        <div class="col-md-4 mt-md-0 mt-3">
+          <div class="options"> <label class="option"><input type="checkbox" name="ROS" value="Yes">ROS<br><span class="checkmark"></span></label></div>
+        </div>
+      </div>
+      <h6 class="pt-4">Other Technical Skills</h6>
+      <div class="rounded"> <input type="text" name="Other Technical Skills" class="form-control bg-light income" placeholder="Other Technical Skills"> </div>
+      <h6 class="pt-4">Robotics Experience</h6>
+      <div class="rounded"><textarea type="text" name="Robotics Experience" class="form-control bg-light income" placeholder="Your Robotics Experience" required></textarea> </div>
+      <h6 class="pt-4">Are you in any Research Group?</h6>
+      <div class="row pt-1">
+        <div class="col-md-4 mt-md-0 mt-3">
+          <div class="options"> <label class="option"><input type="radio" name="Research Group" value="Yes">Yes<br><span class="checkmark"></span></label></div>
+        </div>
+        <div class="col-md-4 mt-md-0 mt-3">
+          <div class="options"> <label class="option"><input type="radio" name="Research Group" value="No">No<br><span class="checkmark"></span></label></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-3" id="lower-section">
+      <div class="d-sm-flex flex-sm-row align-items-center">
+        <h5>Project Information</h5>
+      </div>
+      <h6 class="pt-4">Project Description</h6>
+      <div class="rounded"><textarea type="text" name="Project" class="form-control bg-light income" placeholder="Briefly describe your idea." required></textarea> </div>
+      <h6 class="pt-4">Components Required</h6>
+        <p class="pt-2 text-muted text-justify">Also include estimated budget. </p>
+      <div class="rounded"><textarea type="text" name="Components" class="form-control bg-light income" placeholder="Components"></textarea> </div>
+      <h6 class="pt-4">People Responsible for Project</h6>
+        <p class="pt-2 text-muted text-justify">List the names of all the people who will have access and responsibility of the project (only these people will be allowed to work in the lab)</p>
+      <div class="rounded"><textarea type="text" name="People" class="form-control bg-light income" placeholder="Your Team Members"></textarea> </div>
+    </div>
+
+    <div class="buttons">
+        <input type="submit" name="submit" class="btnSubmit btn-block vertical-center" value="Submit" />
+        <input type="reset" name="reset" class="btnReset btn-block vertical-center" value="Reset" />
+      </div>
+      </form>
+  </div>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyCsML0v6dxZPP0oO7_BSBfn7mWShWBPAnyVji9AMXCrjE3-kl814JDI9h_AXKHG6TFVw/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
