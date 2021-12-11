@@ -1,0 +1,240 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <style>
+    .leftright {
+      background-color: #d3116c;
+    }
+
+    .rightleft {
+      background-color: #d3116c;
+    }
+  </style>
+  <title>CV-Based Ball-Balancing</title>
+  <link rel="shortcut icon" type="image/jpg" href="../../img/gearHiRes.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/75578d0f7f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div style="position: fixed; z-index: 100;">
+    <nav class="navbar">
+      <a onclick="javascript:window.close()">
+        <div class="close-container">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+        </div>
+      </a>
+    </nav>
+  </div>
+  <div class="hero-container">
+    <div class="hero" style="background:url('../../img/ball_img.jpg') no-repeat; background-size:cover;"></div>
+    <div class="hero-stuff">
+      <h1>CV-Based Ball-Balancing</h1>
+    </div>
+    <div class="arrow-pos"><a href="#info">
+        <div class="arrow-container">
+          <div class="arrow-down"></div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div id="info" class="info-div">
+    <h2>About The Project</h2>
+  </div>
+
+  <article>
+
+    <div class="image"><img src="../../img/idea_14.jpg">
+    </div>
+    <div class="text">This project was focused on understanding the control systems applications. It basically uses Computer Vision for locating the ball on the platform and then using the feedback mechanism, i.e, PID Controller in our case,
+      automatically generates the tilt of the surface for balancing the ball on the platform. The servo motors are initially at an angle of 90 degrees and they turn by the angles that is given as an output of the PID Controller. All this is
+      integrated on the Arduino UNO Microcontroller. All the communication between Arduino and the Python Code for OpenCV and controller is handled by Pyserial library.
+    </div>
+    <div class="image"><img src="../../img/idea_15.jpg">
+    </div>
+    <div class="text">In many ways, the project exceeded our expectations by being able to tilt the platform fast enough to balance the ball on it. Later on, we found out that the 4 servo motors were a very high load for Arduino.If this project were
+      to be redone, there would be a few things not done the same way as with most first-time projects; but overall, the project was considered to be a success.
+      <br>
+      <br>
+      Interested people can have a look at the complete documentation of the project <a href="https://drive.google.com/file/d/1hPG_EIUyXh63I8hhvSnfY28OY_8VpfeS/view?usp=sharing"> here</a>.
+    </div>
+
+  </article>
+  <br><br>
+  <div>
+    <div class="info-div">
+      <h2>Meet The Team</h2>
+    </div>
+    <div class="info-div">
+      <p>Mentors
+      <p>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-4 col-sm-4">
+          <div class="our-team">
+            <div class="pic">
+              <img src="../../img/anant.jpg" alt="team-member" class="img-fluid">
+            </div>
+            <div class="content">
+              <h3 class="title">Kolla Ananta Raj</h3>
+              <span class="post">Computer Vision</span>
+              <ul class="social">
+                <li><a href="https://github.com/rajanant49" class="fab fa-github"></a></li>
+                <li><a href="https://www.facebook.com/ananta.raj.77" class="fab fa-facebook-f"></a></li>
+                <li><a href="https://www.linkedin.com/in/ananta-raj-5141041a5/" class="fab fa-linkedin-in"></a></li>
+                <li><a href="mailto: rajanant49@gmail.com" class="fas fa-envelope"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-4">
+          <div class="our-team">
+            <div class="pic">
+              <img src="../../img/niranjana.jpeg" alt="team-member" class="img-fluid">
+            </div>
+            <div class="content">
+              <h3 class="title">Niranjana Madathil</h3>
+              <span class="post">Autonomous Robotics</span>
+              <ul class="social">
+                <li><a href="#" class="fab fa-github"></a></li>
+                <li><a href="https://www.facebook.com/niranjana.madathil" class="fab fa-facebook-f"></a></li>
+                <li><a href="https://www.linkedin.com/in/niranjana-madathil-9719601b1/" class="fab fa-linkedin-in"></a></li>
+                <li><a href="mailto: niranjanamadathil184@gmail.com" class="fas fa-envelope"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="info-div">
+      <p>Mentees
+      <p>
+    </div>
+    <div class="team">
+      <div class="blog-card">
+        <div class="meta">
+          <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+          <ul class="details">
+            <li class="author"><a href="#">Aryan</a></li>
+            <li class="tags">
+              <ul>
+                <li><a href="https://github.com/Aryan-Satpathy"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/aryan.satpathy.547"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="mailto: aryansatpathy@kgpian.iitkgp.ac.in"><i class="fas fa-envelope"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Aryan Satpathy</h1>
+          <h2>Computer Vision</h2>
+          <p>He was responsible for detection of ball on the platform using Open CV. Also helped in communicating the PID output to Arduino microcontroller using Pyfirmata.
+        </div>
+      </div>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div class="photo" style="background-image: url(../../img/Ayush.jpg)"></div>
+          <ul class="details">
+            <li class="author"><a href="#">Ayush</a></li>
+            <li class="tags">
+              <ul>
+                <li><a href="https://github.com/Marteeen23"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/ayush.deep.2308/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ayush-deep-b83196206"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="mailto: ayushdeep2001@gmail.com"><i class="fas fa-envelope"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Ayush Deep</h1>
+          <h2>PID and Hardware</h2>
+          <p>He was involved in checking the PID parts and the compatibility of the PID Controller with the CV-based detection which would give the required data to the servo motors.</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="meta">
+          <div class="photo" style="background-image: url(../../img/PranjalT.jpg)"></div>
+          <ul class="details">
+            <li class="author"><a href="#">Pranjal</a></li>
+            <li class="tags">
+              <ul>
+                <li><a href="https://github.com/Techpro7"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/pranjal.tripathi.5621149"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/pranjal-tripathi-495500212"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="mailto: tripathipranjal75@gmail.com"><i class="fas fa-envelope"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Kumar Pranjal Tripathi</h1>
+          <h2>Control system</h2>
+          <p>He was involved in devising the control law for the controller which takes the OpenCV data and generates the required servo motor response</p>
+        </div>
+      </div>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div class="photo" style="background-image: url(../../img/RishanD.jpeg)"></div>
+          <ul class="details">
+            <li class="author"><a href="#">Rishan</a></li>
+            <li class="tags">
+              <ul>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="http://facebook.com/rishan.dsilva.1"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rishan-dsilva-3715ab20b/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="mailto: joshuadslv24@gmail.com"><i class="fas fa-envelope"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Rishan Joshua Dsilva</h1>
+          <h2>Computer Vision</h2>
+          <p>He was involved in obtaining the homographic image of the detected platform and optimizing the code. This data was sent to the PID Controller to get the required rotations of the servo motor to balance the ball.</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="meta">
+          <div class="photo" style="background-image: url(../../img/Tanushri.jpg)"></div>
+          <ul class="details">
+            <li class="author"><a href="#">Tanushri</a></li>
+            <li class="tags">
+              <ul>
+                <li><a href="https://github.com/Purple-Crystal"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/tanushri.t.1"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/tanushri-tawari-23594020b/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="mailto: tanushri.tawari@gmail.com"><i class="fas fa-envelope"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Tanushri Tawari</h1>
+          <h2>Hardware Assembly</h2>
+          <p> She was involved in the actual assembly of the complete hardware at her home and then connecting the Computer Vision and PID Controller parts through the Arduino alongwith a lot of testing and experimentation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
