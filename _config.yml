@@ -1,12 +1,12 @@
 # Site settings
 title: Makerspace
 description: An initiative of Technology Robotix Society.
-baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Makerspace
-user_description: Makerspace is a novel initiative taken by the Technology Robotics Society, IIT Kharagpur to promote the culture of working on robotics-related projects among the students of IIT Kharagpur. Makerspace supports and provides mentorship to new and innovative project ideas. So, what are you waiting for? Propose your project idea today!
+user_description: Makerspace is a novel initiative taken by the Technology Robotix Society, IIT Kharagpur to promote the culture of working on robotics-related projects among the students of IIT Kharagpur. Makerspace supports and provides mentorship to new and innovative project ideas. So, what are you waiting for? Propose your project idea today!
 user_title: Technology Robotix Society
 email: https://robotix.typeform.com/to/USirXsoq
 twitter_username: RobotixIITKgp
